@@ -1,5 +1,6 @@
 # Academic Utility App – CGPA Calculator & Grade Tools
 
+#### Video Demo : https://drive.google.com/file/d/1Uz8JlnSUZp0bh6ItaJ9bVOexADHLSY5C/view?usp=sharing
 ## Overview
 
 This project is a browser-based academic utility application designed to help students calculate their CGPA, compute final grades, and predict outcomes based on partial assessment data. It is specifically structured around a multi-level academic program consisting of a Foundation level and two Diploma pathways (Diploma in Programming and Diploma in Data Science). The application focuses on correctness, clarity, and ease of use, while remaining lightweight and entirely client-side.
