@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CGPA Calculator</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<nav>
+    <a href="cgpa.html">CGPA</a>
+    <a href="grades.html">Grades</a>
+</nav>
+
+<div class="container">
+
+<h1>Foundation Level</h1>
+<div class="section" id="foundation"></div>
+<button onclick="calcFoundation()">Calculate CGPA</button>
+<div class="result" id="foundationResult"></div>
+
+<h1>Diploma in Programming</h1>
+<div class="section" id="prog"></div>
+<button onclick="calcProg()">Calculate CGPA</button>
+<div class="result" id="progResult"></div>
+
+<h1>Diploma in Data Science</h1>
+
+<select id="dsTrack" onchange="renderDS()">
+    <option value="ba">Business Analytics</option>
+    <option value="genai">GenAI</option>
+</select>
+
+<div class="section" id="ds"></div>
+<button onclick="calcDS()">Calculate CGPA</button>
+<div class="result" id="dsResult"></div>
+
+</div>
+
+<script src="/static/js/cgpa.js"></script>
+</body>
+</html>
