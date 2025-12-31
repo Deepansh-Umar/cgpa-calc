@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grade Tools</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<nav>
+    <a href="cgpa.html">CGPA</a>
+    <a href="grades.html">Grades</a>
+</nav>
+
+<div class="container">
+
+<h1>Grade Calculator</h1>
+
+<div class="section">
+    <select id="level" onchange="updateSubjects()">
+        <option value="foundation">Foundation</option>
+        <option value="diploma">Diploma</option>
+    </select>
+
+    <select id="subject" onchange="renderInputs()"></select>
+
+    <div id="inputs"></div>
+
+<button onclick="predictMode=false; renderInputs()">Calculate Grade</button>
+<button onclick="predictMode=true; renderInputs()">Predict Grades</button>
+
+
+    <div class="result" id="output"></div>
+</div>
+
+</div>
+
+<script src="/static/js/grades.js"></script>
+</body>
+</html>
