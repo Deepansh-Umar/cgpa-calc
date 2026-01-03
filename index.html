@@ -3,11 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Academic Utility App</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            color: #e5e7eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 90%;
+            background: #020617;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 28px;
+            color: #f8fafc;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #cbd5f5;
+            margin: 15px 0;
+        }
+
+        .links {
+            margin-top: 30px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .links a {
+            text-decoration: none;
+            padding: 14px 28px;
+            border-radius: 6px;
+            font-weight: 600;
+            color: #020617;
+            background: #38bdf8;
+            transition: transform 0.2s ease, background 0.2s ease;
+        }
+
+        .links a:hover {
+            background: #0ea5e9;
+            transform: translateY(-2px);
+        }
+
+        .note {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #94a3b8;
+        }
+    </style>
 </head>
 <body>
-    <a href="templates/cgpa.html">CGPA</a>
-    <a href="templates/grades.html">Grades</a>
+
+    <div class="container">
+        <h1>Academic Utility App</h1>
+
+        <p>
+            This web application helps students calculate CGPA, compute final grades,
+            and predict outcomes based on partial assessment data. It is built using
+            simple HTML, CSS, and JavaScript, with all calculations performed directly
+            in the browser.
+        </p>
+
+        <p>
+            The tools are structured around a multi-level academic program and are
+            designed to handle real grading rules, credit-weighted CGPA, and incomplete
+            courses accurately.
+        </p>
+
+        <div class="links">
+            <a href="templates/cgpa.html">CGPA Calculator</a>
+            <a href="templates/grades.html">Grade Tools</a>
+        </div>
+
+        <div class="note">
+            More features and refinements are planned.
+        </div>
+    </div>
 
 </body>
 </html>
